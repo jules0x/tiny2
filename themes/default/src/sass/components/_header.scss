@@ -1,0 +1,14 @@
+.header {
+	background-color: $header-background;
+
+	&-container {
+		padding: 16px 0;
+		position: relative;
+
+		@include respond(lg) {
+			margin: 0 auto;
+			max-width: $container-width;
+			padding: 20px 30px;
+		}
+	}
+}

@@ -1,0 +1,138 @@
+/*
+Global Variables
+Contents:
+
+1.  Imports
+2.  Colour variables
+3.  Environment variables
+4.  Theme colours
+5.  Radii and other global css3 style properties
+6.  Link colours
+7.  Tables
+8.  Max page widths applied to container elements
+*/
+/*
+1.  Imports
+*/
+@import "var-breakpoints";
+
+/*
+2.  Colour variables
+Put the colours from the design here. When naming your colours
+be sure to use  http://chir.ag/projects/name-that-color to get
+a proper colour name
+*/
+
+$color-bunker: #131A21;
+$color-carnation: #FC5F5E;
+$color-ebony-clay: #212E3A;
+$color-fountain-blue: #59C3BC;
+$color-gallery: #EFEFEF;
+$color-mercury: #e5e5e5;
+$color-pickled-bluewood: #354A5E;
+$color-red-ribbon: #E9004C;
+$color-revolver: #3D1C42;
+$color-ronchi: #EECA44;
+$color-sushi: #94B541;
+$color-tree-poppy: #FD911E;
+
+/*
+3.  Environment variables
+Environment variables. Note some projects put all css into assets,
+so the path needs to be able to find the css from there
+*/
+
+$theme-name: 'default';
+$file-path: "../../../themes/"+$theme-name;
+$image-path: $file-path + "/images/";
+$svg-path: $file-path + "/images/svg/";
+
+$base-font-size: 16px;
+
+$font: 'helvetica neue', helvetica, arial, sans-serif;
+$font-medium: 'helvetica neue', helvetica, arial, sans-serif;
+$font-bold: 'helvetica neue', helvetica, arial, sans-serif;
+$font-italic: 'helvetica neue', helvetica, arial, sans-serif;
+
+$font-heading: $font;
+$font-heading--alt: helvetica, arial, sans-serif;
+$font-heading-weight: 700;
+
+/*
+4.  Theme colours
+Make sure that the colours assigned here are assigned using the
+colour variables above
+*/
+
+$brand-text-color: white;
+$default-color: $color-gallery;
+$primary-color: $color-red-ribbon;
+$secondary-color: $color-pickled-bluewood;
+$success-color: $color-sushi;
+$error-color: $color-carnation;
+$warning-color: $color-ronchi;
+
+$body-bg: $default-color;
+$font-color: $color-bunker;
+
+$link-color: darken($secondary-color, 20%);
+$link-hover-color: lighten($link-color, 10%);
+$link-visited-color: darken($link-color, 10%);
+
+/*
+5.  Radii and other global css3 style properties
+*/
+
+$button-radius: 3px;
+
+/*
+6.  Link colours
+Make sure that the colours assigned here are assigned using the
+colour variables above
+*/
+
+// Menu
+$menu-color: $primary-color;
+$menu-background-color: #23507b;
+$menu-link-color: white;
+$menu-link-color--current-section: white;
+$menu-link-hover-color: white;
+$menu-link-hover-background-color: darken($primary-color, 15%);
+$side-menu-link: black;
+$side-menu-link--current-section: #272727;
+
+// Hamburger
+$hamburger-color: white;
+
+// Header
+$header-background: #1A2A45;
+
+// Footer
+$footer-color: $menu-color;
+$footer-link-color: $menu-link-color;
+$footer-link-color-visited: black;
+$footer-link-hover-color: $menu-link-hover-color;
+$footer-link-hover-background-color: $menu-link-hover-background-color;
+
+/*
+7.  Tables
+*/
+
+$table-header-font-family: $font;
+$table-bgcolor: white;
+$table-thead-color: $font-color;
+$table-thead-bgcolor: $default-color;
+$table-border-size: 1px;
+$table-border-style: solid;
+$table-border-color: $color-mercury;
+$table-cell-border-size: 1px;
+$table-cell-border-color: $color-mercury;
+$table-cell-border-style: solid;
+
+/*
+8.  Max page widths applied to container elements
+*/
+
+$container-width: 1200px;
+$max-device-width: 2880px;
+$gutter: 30px;
